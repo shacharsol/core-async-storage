@@ -1,7 +1,7 @@
 {
-  "name": "core-async-storage",
+  "name": "core-async-storage-rn",
   "version": "1.0.0",
-  "description": "A Clojure wrapper around react-native's AsyncStorage using core.async",
+  "description": "A Clojure wrapper around react-native's new AsyncStorage using core.async",
   "dependencies": {},
   "devDependencies": {
     "karma": "^0.13.22",
@@ -9,6 +9,6 @@
     "karma-cljs-test": "^0.1.0"
   },
   "scripts": { "test": "lein test" },
-  "author": "Griffin Smith",
+  "author": "Griffin Smith & Shachar Solomon",
   "license": "MIT"
 }

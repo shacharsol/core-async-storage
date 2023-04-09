@@ -1,5 +1,5 @@
 (ns glittershark.core-async-storage
-  "Clojurescript wrapper around react-native's AsyncStorage using core.async
+  "Clojurescript wrapper around react-native's @react-native-async-storage/async-storage AsyncStorage using core.async
 
    In general, all functions in this namespace are kebab-case versions of
    AsyncStorage's camelCase functions, that return a `core.async' channel rather
@@ -16,7 +16,7 @@
 
 (def ^:private async-storage
   (if (exists? js/require)
-    (goog.object/get (js/require "react-native") "AsyncStorage")
+    (goog.object/get (js/require "@react-native-async-storage/async-storage") "AsyncStorage")
     (js-obj)))
 
 (defn- map-first ([f] (comp vector f first))

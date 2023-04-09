@@ -1,0 +1,7 @@
+{:paths   ["src"]
+ 
+ :aliases {
+           :test {:extra-paths ["spec"]
+                  :extra-deps  {speclj/speclj {:mvn/version "3.4.1"}}}
+           :spec {:main-opts ["-m" "speclj.main" "-c" "-t" "~slow"]}
+           }}
